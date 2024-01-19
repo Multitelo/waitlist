@@ -75,7 +75,7 @@ function copylink() {
     // Use the Clipboard API to copy the selected text to the clipboard
     navigator.clipboard.writeText(inputField.value)
         .then(() => {
-            alert("Text copied: " + inputField.value);
+            alert("Referral link copied: " + inputField.value);
         })
         .catch(error => {
             console.error("Copying failed:", error);
@@ -97,4 +97,26 @@ async function sharelink() {
   } catch (error) {
       console.error("Sharing failed:", error);
   }
+}
+
+function copylinko() {
+  const inputField = document.getElementById("refoutput");
+
+  // Select the text inside the input field
+  inputField.select();
+  inputField.setSelectionRange(0, 99999); // For mobile devices
+
+  try {
+    // Use the Clipboard API to copy the selected text to the clipboard
+    navigator.clipboard.writeText(inputField.value)
+        .then(() => {
+          alert("Referral link copied: " + inputField.value);
+        })
+        .catch(error => {
+            console.error("Copying failed:", error);
+        });
+} catch (error) {
+    console.error("Copying failed:", error);
+}
+inputField.setSelectionRange(0, 0);
 }

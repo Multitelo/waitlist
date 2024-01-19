@@ -1,4 +1,4 @@
-<!-- <?php 
+<?php 
   header("Cache-Control: no-cache, no-store, must-revalidate");
   header("Pragma: no-cache");
   header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
@@ -38,7 +38,7 @@
   if ($resultResearcher) {
       $rowResearcher = mysqli_fetch_assoc($resultResearcher);
       $researcherCount = $rowResearcher['researcher_count'];
-      echo "Researcher count: " . $researcherCount . " users<br>";
+      // echo "Researcher count: " . $researcherCount . " users<br>";
 
       // Free the result set
       mysqli_free_result($resultResearcher);
@@ -51,7 +51,7 @@
   if ($resultParticipant) {
       $rowParticipant = mysqli_fetch_assoc($resultParticipant);
       $participantCount = $rowParticipant['participant_count'];
-      echo "Participant count: " . $participantCount . " users<br>";
+      // echo "Participant count: " . $participantCount . " users<br>";
 
       // Free the result set
       mysqli_free_result($resultParticipant);
@@ -62,11 +62,11 @@
 
   // Calculate and display the total count
   $totalCount = $researcherCount + $participantCount;
-  echo "Total users: " . $totalCount . " users<br>";
+  // echo "Total users: " . $totalCount . " users<br>";
 
   // Close the database connection
   mysqli_close($conn);
-?> -->
+?>
 
 
 <!DOCTYPE html>
@@ -84,6 +84,7 @@
     <div class="body">
       <nav>
         <img src="images/questy png.png" alt="Qwesty Logo" srcset="" />
+        <div><button><a href="./ref.php">Get Invite Link</a></button></div>
       </nav>
       <main>
         <div>

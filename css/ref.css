@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@300;400;500;600&family=PT+Serif&family=Space+Grotesk:wght@300;400;500&display=swap");
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Space Grotesk', sans-serif; */
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* border: 1px solid red; */
+}
+body {
+  width: 100vw;
+  /* overflow-x: hidden; */
+}
+
+.body {
+  width: 100vw;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  margin: 10px;
+  margin-bottom: 25px;
+}
+/* nav > div {
+  height: 100%;
+  align-self: center;
+  /* margin: 15px;
+} */
+
+nav img {
+  height: 100%;
+  margin: 10px;
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+main > div:first-child {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #fff;
+  margin: 0 auto;
+}
+form {
+  padding: 2px 16px;
+}
+form > h1 {
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: capitalize;
+}
+input[type="email"],
+input[type="button"],
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+}
+input[type="button"],
+input[type="submit"] {
+  background-color: #7f56d9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+.efl > p {
+  text-align: center;
+  padding: 10px;
+  font-family: "Outfit", sans-serif;
+}
+input[type="url"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+}
+input[type="button"] {
+  width: 25%;
+}
+.efl {
+  padding: 6px 16px 18px;
+}
+p > a {
+  text-decoration: underline;
+  font-weight: 900;
+}
+.qwessd {
+  text-align: center;
+  margin-top: 20px;
+}
+.qwessd > h1 {
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: capitalize;
+}
+.qwessd > p {
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 60vw;
+  min-width: 350px;
+  max-width: 550px;
+  height: 60vh;
+  min-height: 350px;
+  max-height: 450px;
+  margin: 20px auto;
+  text-align: center;
+  color: whitesmoke;
+  /* margin: 20px; */
+}
+.container > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-family: "Outfit", sans-serif;
+}
+.box1 {
+  grid-area: 2 / 1 / 4 / 4;
+  background: #f0b480;
+  /* height: 197px; */
+}
+.box2 {
+  grid-area: 1 / 4 / 4 / 7;
+  background: #f68563;
+}
+.box3 {
+  grid-area: 4 / 1 / 7 / 3;
+  background: #f4ed93;
+  color: white;
+}
+.box4 {
+  grid-area: 4 / 3 / 6 / 5;
+  background: #525c51;
+}
+.box5 {
+  grid-area: 5 / 5 / 7 / 7;
+  background: #a1dc80;
+}
