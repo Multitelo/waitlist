@@ -109,6 +109,16 @@
         <input type="button" value="Share Link" onclick="sharelink()">
       </div>
     </div>
+    <div class="qwessd">
+          <h1>$Qwess distribution method</h1>
+          <p>The following rank system are being used to distribute $Qwess</p>
+          <div class="container">
+            <div class="box box1">45 $Qwess<br />1st to 3rd rank</div>
+            <div class="box box2">40 $Qwess<br />4th to 10th rank</div>
+            <div class="box box3">25 $Qwess<br />11th to 30th rank</div>
+            <div class="box box4">15 $Qwess<br />31st to 70th rank</div>
+            <div class="box box5">10 $Qwess<br />All other rank</div>
+          </div>
     <footer>
       <div class="footimg">
         <img src="images/questy png.png" alt="" srcset="">

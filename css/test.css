@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@300;400;500;600&family=PT+Serif&family=Space+Grotesk:wght@300;400;500&display=swap");
+* {
+  /* list-style: none; */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+}
+footer {
+  background: linear-gradient(to top, #7f56d9, #ffffff);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.footimg img {
+  max-width: 100px;
+  height: auto;
+}
+
+.footimg ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.footimg ul li a img {
+  width: 30px;
+  height: auto;
+}
+
+footer > p {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1em;
+  color: #040404;
+}
+
+footer > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer > div:last-of-type p {
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
+footer > div:last-of-type ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+footer > div:last-of-type ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .footimg,
+  footer > div:last-of-type {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer > div:last-of-type ul {
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  footer > div:last-of-type p,
+  footer > div:last-of-type ul {
+    text-align: center;
+    flex: none;
+  }
+}

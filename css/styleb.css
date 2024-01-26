@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@300;400;500;600&family=PT+Serif&family=Space+Grotesk:wght@300;400;500&display=swap");
+* {
+  /* list-style: none; */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* border: 1px solid blue; */
+  font-family: "Outfit", sans-serif;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.body {
+  width: 100vw;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  padding-bottom: 20px;
+}
+nav > img {
+  height: 100%;
+  margin: 10px;
+}
+
+header {
+  background: #f8f9fa; /* Light grey background */
+  padding: 20px;
+  text-align: center; /* Centers the text */
+}
+header p:first-of-type {
+  text-align: left;
+  font-size: 12px;
+  font-style: italic;
+}
+header p {
+  color: #6c757d; /* Grey text for the publish date */
+  margin-bottom: 5px;
+}
+
+header h1 {
+  color: #000; /* Black color for the main title */
+  margin-bottom: 10px;
+  color: #1d1a1a;
+  font-family: Outfit;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+header img {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Spacing after the header content */
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 48px;
+}
+main section h2 {
+  color: #7f56d9; /* Purple color for section titles */
+  margin-bottom: 10px;
+}
+
+main section p {
+  color: #000; /* Black color for the paragraph text */
+  margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+#impo,
+#whois {
+  width: 100%;
+}
+#impo > img {
+  width: 100%;
+}
+#whois ul {
+  list-style: unset !important;
+}
+section a {
+  text-decoration: underline;
+  color: unset;
+  opacity: 0.9;
+}
+#sky {
+  display: unset;
+  width: 100%;
+  align-items: unset;
+}
+#sky > p {
+}

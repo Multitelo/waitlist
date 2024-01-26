@@ -315,7 +315,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         font-family: \'Outfit\', sans-serif;
                       "
                     >
-                      <p>You found us, ' . $username . '!!</p>
+                      <p>Hurray! Qwestee, ' . $username . '!!</p>
                 
                       <p>
                         You have joined Qwesty waiting list and you will be one of the first to
