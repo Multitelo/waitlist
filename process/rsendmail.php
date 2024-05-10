@@ -32,12 +32,12 @@ function sendWelcomeEmail($email, $username) {
         // ];
 
         // Sender and recipient settings
-        $mail->setFrom('team@qwesty.site','Qwesty');
+        $mail->setFrom('team@qwesty.site','SOLVETY (formerly Qwesty)');
         $mail->addAddress($email, $username);
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'Season\'s Greetings';
+        $mail->Subject = 'She\'s back!!';
         $mail->Body = '<!DOCTYPE html>
         <html lang="en">
           <head>
@@ -48,32 +48,31 @@ function sendWelcomeEmail($email, $username) {
               rel="stylesheet"
             />
           </head>
-          <body style="width: 80vw; margin: 0 auto">
-            <div
-              style="
-                width: 100%;
-                min-width: 300px;
-                max-width: 720px;
-                margin: 5% auto;
-                background-color: #7F56D9;
-                height: fit-content;
-                padding: 2%;
-                border-radius: 8px;
-                color: azure;
-                font-family: Outfit, sans-serif;
-              "
-            >
-              <p>Merry Xmas, <b>' . $username . '!</b></p>
-              <img src="https://qwesty.site/images/xmasgt.jpg" alt="Qwesty Message" srcset="" style="
-              width: 100%;"/>
-              <p>
-                We would appreciate speaking up for us.
-                <br><br>
-                Qwesty Team.
-              </p>
-                    </div>
-                  </body>
-                </html>';
+          <body style="width: 80vw; margin: 0 auto; font-family: Outfit, sans-serif;">
+          <p>
+          How long was it?<br>
+          Mathematically, it was a month.<br>
+          Emotionally, it feels forever.<br><br>
+          
+          I have been on a retreat since April and yes, I told you that we got an email marketer. But the truth is; no one can understand you better than someone in the same shoe as you.
+          <br><br><br>
+          
+          So as a product manager and someone co-founding a project, I know that fear of - <br>
+          <ul><li>What\'s next?</li>
+          <li>Would my target audience love this?</li>
+          <li>How do I increase my revenue while satisfying my users?</li>
+          <li>Can my project excite Investors to back it up with full heart and big pocket?</li></ul><br>
+          
+          This is the exact reason why we decided to build this platform but this email isn\'t for those stories that touches the heart.
+          <br><br>
+          I just want to scream that I\'m back to you! And to let you know that you will be hearing from us as usual.<br><br>
+          So stay tuned to your email 👀.<br><br><br>
+          
+          <b>Skyrose</b><br>
+          <i>Founder and Product Manager</i>
+          </p>
+          </body>
+        </html>';
 
         // Send the email
         $mail->send();

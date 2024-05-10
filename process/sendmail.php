@@ -32,12 +32,12 @@ function sendWelcomeEmail($email, $username, $refid) {
         // ];
 
         // Sender and recipient settings
-        $mail->setFrom('team@qwesty.site','Qwesty');
+        $mail->setFrom('team@qwesty.site','SOLVETY (formerly Qwesty)');
         $mail->addAddress($email, $username);
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'Season\'s Greetings';
+        $mail->Subject = 'She\'s back!!';
         $mail->Body = '<!DOCTYPE html>
         <html lang="en">
           <head>
@@ -48,32 +48,33 @@ function sendWelcomeEmail($email, $username, $refid) {
               rel="stylesheet"
             />
           </head>
-          <body style="width: 80vw; margin: 0 auto">
-            <div
-              style="
-                width: 100%;
-                min-width: 300px;
-                max-width: 720px;
-                margin: 5% auto;
-                background-color: #7F56D9;
-                height: fit-content;
-                padding: 2%;
-                border-radius: 8px;
-                color: azure;
-                font-family: Outfit, sans-serif;
-              "
-            >
-              <p>Merry Xmas, <b>' . $username . '!</b></p>
-              <img src="https://qwesty.site/images/xmasgt.jpg" alt="Qwesty Message" srcset="" />
-              <p>
-                Get your invite link to invite friends to wait with you 😌, from
-                <a href="https://qwesty.site">here.</a>
-                <br><br>
-                or Copy the link below<br><br>https://qwesty.site?' . $refid . '.
-              </p>
-                    </div>
-                  </body>
-                </html>';
+          <body style="width: 80vw; margin: 0 auto; font-family: Outfit, sans-serif;">
+          <p>          
+          How long was it?<br>
+          Mathematically, it was a month.<br>
+          Emotionally, it feels forever.<br><br>
+          
+          I have been on a retreat since April and yes, I told you that we got an email marketer. But the truth is; no one can understand you better than someone in the same shoe as you.<br><br>
+          
+          
+          So just like you, I have always had the urge and interested in sharing my opinions with people, brands or whatever entity as far as it would improve them.<br><br>
+          
+          Then, I stumbled upon some websites that even promise to pay for such gesture. Interesting!<br><br>
+          
+          But imagine what that cost me, my sanity.<br>
+          Taking exams is stressful but we all do it for our greater good.
+           Now imagine feeling like you\'re taking exams. At worst, you don\'t feel appreciated nor cared for.<br><br>
+          
+          This is the exact reason why we decided to build this platform but this email is\'t for those stories that touches the heart.<br><br>
+          
+          I just want to scream that I\'m back to you! And to let you know that you will be hearing from us as usual.<br><br>
+          So stay tuned to your email 👀.<br><br><br>
+          
+          <b>Skyrose</b><br>
+          <i>Founder and Product Manager</i>
+          </p>
+          </body>
+        </html>';
 
         // Send the email
         $mail->send();

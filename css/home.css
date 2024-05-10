@@ -150,7 +150,7 @@ input[type="button"]:hover {
   display: flex;
   justify-content: flex-end;
 }
-.qwessd {
+/* .qwessd {
   text-align: center;
   margin-top: 20px;
 }
@@ -176,37 +176,86 @@ input[type="button"]:hover {
   margin: 20px auto;
   text-align: center;
   color: whitesmoke;
-  /* margin: 20px; */
-}
-.container > * {
+  margin: 20px; 
+} */
+
+#body {
+  font-family: "Space Grotesk", sans-serif;
+  /* background-color: #f4f4f4; */
+  /* margin: 0; */
+  /* padding: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  font-family: "Outfit", sans-serif;
-  margin-bottom: 20px;
+  /* height: 100vh; */
 }
-.box1 {
-  grid-area: 2 / 1 / 4 / 4;
-  background: #f0b480;
-  /* height: 197px; */
+
+.container {
+  width: 90%;
+  max-width: 1369px;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.box2 {
-  grid-area: 1 / 4 / 4 / 7;
-  background: #f68563;
+
+.awards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows wrapping for responsiveness */
+  margin-top: 25px;
 }
-.box3 {
-  grid-area: 4 / 1 / 7 / 3;
-  background: #f4ed93;
+
+.award {
+  display: flex;
+  align-items: center; /* Centers the items vertically */
+  gap: 10px; /* Space between label and image */
+  margin-bottom: 25px;
+}
+
+.label {
+  white-space: nowrap; /* Prevents the label from wrapping */
+  padding: 15px 10px;
+  padding-right: 40px;
+  font-size: 17px;
   color: white;
+  border-radius: 1% 10% 10% 10px;
+  /* background-color: #888; Default background color */
 }
-.box4 {
-  grid-area: 4 / 3 / 6 / 5;
-  background: #525c51;
+
+.label1 {
+  background-color: #f88379;
 }
-.box5 {
-  grid-area: 5 / 5 / 7 / 7;
-  background: #a1dc80;
+.label2 {
+  background-color: #ffa07a;
+}
+.label3 {
+  background-color: #f0e68c;
+}
+.label4 {
+  background-color: #90ee90;
+}
+.label5 {
+  background-color: #add8e6;
+}
+
+.award img {
+  width: 150px;
+  height: auto;
+  margin-left: -60px;
+}
+
+h2,
+p {
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Outfit", sans-serif;
 }
 
 @media screen and (max-width: 600px) {
